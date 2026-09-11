@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Command Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>⚙️ DevOps Command Lab</h1>
+    <p>Practice Linux, Git, Docker, Kubernetes, AWS & CI/CD commands</p>
+</header>
+
+<main>
+
+    <section class="status">
+        <div>
+            <h3>Application</h3>
+            <span class="online">● ONLINE</span>
+        </div>
+
+        <div>
+            <h3>Environment</h3>
+            <span>Development</span>
+        </div>
+
+        <div>
+            <h3>Version</h3>
+            <span>1.0.0</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Command Categories</h2>
+
+        <div class="cards">
+
+            <div class="card" onclick="showCommands('linux')">
+                <h3>🐧 Linux</h3>
+                <p>Files, processes, permissions, networking</p>
+            </div>
+
+            <div class="card" onclick="showCommands('git')">
+                <h3>🔀 Git</h3>
+                <p>Clone, commit, branch, merge, push</p>
+            </div>
+
+            <div class="card" onclick="showCommands('docker')">
+                <h3>🐳 Docker</h3>
+                <p>Images, containers, networks, volumes</p>
+            </div>
+
+            <div class="card" onclick="showCommands('kubernetes')">
+                <h3>☸️ Kubernetes</h3>
+                <p>Pods, deployments, services</p>
+            </div>
+
+            <div class="card" onclick="showCommands('aws')">
+                <h3>☁️ AWS</h3>
+                <p>EC2, S3, IAM and AWS CLI</p>
+            </div>
+
+            <div class="card" onclick="showCommands('cicd')">
+                <h3>🚀 CI/CD</h3>
+                <p>Jenkins, Maven and deployment</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="terminal-section">
+
+        <h2>Command Output</h2>
+
+        <div class="terminal">
+            <div class="terminal-header">
+                <span>devops@lab:~$</span>
+            </div>
+
+            <div id="terminal-output">
+                Select a category above...
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>DevOps Command Lab | Practice Project</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
